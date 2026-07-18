@@ -1,6 +1,6 @@
 // Type definitions for @orchestratexr/conversation-embed
 
-/** A raw Tavus interaction event payload (message_type: "conversation"). */
+/** A raw interaction event payload (message_type: "conversation"). */
 export interface InteractionEvent {
   message_type: 'conversation'
   event_type: string
@@ -104,7 +104,7 @@ export class ConversationEmbed {
   appendContext(context: string): this
   sensitivity(opts: SensitivityOptions): this
   toolResult(opts: ToolResultOptions): this
-  /** Send an arbitrary inbound interaction event by its Tavus event_type. */
+  /** Send an arbitrary inbound interaction event by its event_type. */
   interaction(eventType: string, properties?: Record<string, unknown>): this
 
   destroy(): void

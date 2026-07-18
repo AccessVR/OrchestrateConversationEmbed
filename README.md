@@ -1,6 +1,6 @@
 # @orchestratexr/conversation-embed
 
-Host-side SDK for embedding the [OrchestrateXR](https://orchestratexr.com) conversation player in an `<iframe>` and exchanging [Tavus interaction events](https://docs.tavus.io/sections/conversational-video-interface/interactions-protocols/overview) with it over `postMessage`.
+Host-side SDK for embedding the [OrchestrateXR](https://orchestratexr.com) conversation player in an `<iframe>` and exchanging conversation interaction events with it over `postMessage`.
 
 Your page can **receive** what happens in a live conversation — utterances, tool calls, speaking-state changes, perception events — and **send** commands back into it: respond, echo, interrupt, overwrite/append context, adjust sensitivity, and return tool results.
 
@@ -73,7 +73,7 @@ Or drop it on a page directly:
 | `<lifecycle name>` | e.g. `replica-joined`, `conversation-ended` | `(msg)` |
 | `error` | A command was rejected | `(msg)` |
 
-`event` is the raw Tavus payload (`{ message_type, event_type, conversation_id, properties, … }`). The per-type channel name is the event type with the `conversation.` prefix stripped.
+`event` is the raw interaction-event payload (`{ message_type, event_type, conversation_id, properties, … }`). The per-type channel name is the event type with the `conversation.` prefix stripped.
 
 ## Sending events
 

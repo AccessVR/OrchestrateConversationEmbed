@@ -1,7 +1,7 @@
 /**
  * @orchestratexr/conversation-embed
  * ---------------------------------
- * Embed the OrchestrateXR conversation player in an <iframe> and exchange Tavus
+ * Embed the OrchestrateXR conversation player in an <iframe> and exchange
  * interaction events with it over postMessage — receive utterances, tool calls,
  * speaking-state and perception events, and send respond / echo / interrupt /
  * context / sensitivity / tool-result commands back into the live conversation.
@@ -69,7 +69,7 @@
 
     if (msg.type === 'interaction-event') {
       // Fire both the catch-all 'interaction' channel and a per-event-type
-      // channel keyed off the Tavus event_type (e.g. 'utterance', 'tool_call').
+      // channel keyed off the event_type (e.g. 'utterance', 'tool_call').
       this._emit('interaction', msg.event, msg)
       var shortName = String(msg.event_type || '').replace(/^conversation\./, '')
       if (shortName) {
@@ -206,7 +206,7 @@
     })
   }
 
-  /** Send an arbitrary inbound interaction event by its Tavus event_type. */
+  /** Send an arbitrary inbound interaction event by its event_type. */
   ConversationEmbed.prototype.interaction = function (eventType, properties) {
     return this.send('interaction', { event_type: eventType, properties: properties })
   }

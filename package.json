@@ -1,7 +1,7 @@
 {
   "name": "@orchestratexr/conversation-embed",
   "version": "0.1.0",
-  "description": "Embed the OrchestrateXR conversation player and exchange Tavus interaction events over postMessage.",
+  "description": "Embed the OrchestrateXR conversation player and exchange conversation interaction events over postMessage.",
   "main": "./index.js",
   "module": "./index.mjs",
   "types": "./index.d.ts",
@@ -24,9 +24,7 @@
   "sideEffects": false,
   "keywords": [
     "orchestratexr",
-    "tavus",
     "conversation",
-    "cvi",
     "embed",
     "iframe",
     "postmessage",
