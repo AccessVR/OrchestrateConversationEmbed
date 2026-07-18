@@ -1,0 +1,48 @@
+{
+  "name": "@orchestratexr/conversation-embed",
+  "version": "0.1.0",
+  "description": "Embed the OrchestrateXR conversation player and exchange Tavus interaction events over postMessage.",
+  "main": "./index.js",
+  "module": "./index.mjs",
+  "types": "./index.d.ts",
+  "unpkg": "./index.js",
+  "jsdelivr": "./index.js",
+  "exports": {
+    ".": {
+      "types": "./index.d.ts",
+      "import": "./index.mjs",
+      "require": "./index.js"
+    }
+  },
+  "files": [
+    "index.js",
+    "index.mjs",
+    "index.d.ts",
+    "README.md",
+    "LICENSE"
+  ],
+  "sideEffects": false,
+  "keywords": [
+    "orchestratexr",
+    "tavus",
+    "conversation",
+    "cvi",
+    "embed",
+    "iframe",
+    "postmessage",
+    "interaction-events"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AccessVR/OrchestrateConversationEmbed.git"
+  },
+  "homepage": "https://github.com/AccessVR/OrchestrateConversationEmbed#readme",
+  "bugs": {
+    "url": "https://github.com/AccessVR/OrchestrateConversationEmbed/issues"
+  },
+  "author": "AccessVR LLC d/b/a OrchestrateXR",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  }
+}
