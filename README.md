@@ -30,7 +30,7 @@ Or drop it on a page directly:
 ```html
 <iframe
   id="player"
-  src="https://app.orchestratexr.com/…your conversation launch url…"
+  src="https://embed.orchestratexr.com/…your conversation launch url…"
   allow="camera; microphone; autoplay"
 ></iframe>
 
@@ -39,7 +39,7 @@ Or drop it on a page directly:
 
   const embed = attach(document.getElementById('player'), {
     // Recommended in production: pin the player's origin instead of '*'.
-    playerOrigin: 'https://app.orchestratexr.com',
+    playerOrigin: 'https://embed.orchestratexr.com',
   })
 
   // The player announces itself once it's live in the iframe.
