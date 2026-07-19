@@ -6,7 +6,7 @@
 
 Host-side SDK for embedding the [OrchestrateXR](https://orchestratexr.com) conversation player in an `<iframe>` and exchanging conversation interaction events with it over `postMessage`.
 
-> **📖 Full guide:** [Driving an embedded conversation → interaction events](https://docs.orchestratexr.com/interaction-events)
+> **📖 Full guide:** [OrchestrateXR / Interaction Events](https://docs.orchestratexr.com/interaction-events)
 
 Your page can **receive** what happens in a live conversation — utterances, tool calls, speaking-state changes, perception events — and **send** commands back into it: respond, echo, interrupt, overwrite/append context, adjust sensitivity, and return tool results.
 
@@ -107,7 +107,7 @@ Types ship with the package (`index.d.ts`) — no `@types` install needed. `atta
 
 ## Documentation
 
-Full guide and the interaction-event reference: **[docs.orchestratexr.com/interaction-events](https://docs.orchestratexr.com/interaction-events)**. Issues and questions: [github.com/AccessVR/OrchestrateConversationEmbed/issues](https://github.com/AccessVR/OrchestrateConversationEmbed/issues).
+Full guide and the interaction-event reference: **[OrchestrateXR / Interaction Events](https://docs.orchestratexr.com/interaction-events)**. Issues and questions: [github.com/AccessVR/OrchestrateConversationEmbed/issues](https://github.com/AccessVR/OrchestrateConversationEmbed/issues).
 
 ## License
 
