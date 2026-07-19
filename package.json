@@ -1,6 +1,6 @@
 {
   "name": "@orchestratexr/conversation-embed",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Embed the OrchestrateXR conversation player and exchange conversation interaction events over postMessage.",
   "main": "./index.js",
   "module": "./index.mjs",
@@ -34,7 +34,7 @@
     "type": "git",
     "url": "git+https://github.com/AccessVR/OrchestrateConversationEmbed.git"
   },
-  "homepage": "https://github.com/AccessVR/OrchestrateConversationEmbed#readme",
+  "homepage": "https://docs.orchestratexr.com/interaction-events",
   "bugs": {
     "url": "https://github.com/AccessVR/OrchestrateConversationEmbed/issues"
   },

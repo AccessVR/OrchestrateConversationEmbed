@@ -1,6 +1,12 @@
 # @orchestratexr/conversation-embed
 
+[![npm version](https://img.shields.io/npm/v/@orchestratexr/conversation-embed.svg)](https://www.npmjs.com/package/@orchestratexr/conversation-embed)
+[![types included](https://img.shields.io/npm/types/@orchestratexr/conversation-embed.svg)](https://www.npmjs.com/package/@orchestratexr/conversation-embed)
+[![license](https://img.shields.io/npm/l/@orchestratexr/conversation-embed.svg)](./LICENSE)
+
 Host-side SDK for embedding the [OrchestrateXR](https://orchestratexr.com) conversation player in an `<iframe>` and exchanging conversation interaction events with it over `postMessage`.
+
+> **📖 Full guide:** [Driving an embedded conversation → interaction events](https://docs.orchestratexr.com/interaction-events)
 
 Your page can **receive** what happens in a live conversation — utterances, tool calls, speaking-state changes, perception events — and **send** commands back into it: respond, echo, interrupt, overwrite/append context, adjust sensitivity, and return tool results.
 
@@ -94,6 +100,14 @@ Or drop it on a page directly:
 - **`playerOrigin`** — the origin commands are posted to. Defaults to `'*'`; set it to the player's origin in production so commands can't be delivered to an unexpected document.
 - **`allowedOrigins`** — an optional allowlist; when set, events from any other origin are ignored.
 - The SDK only accepts messages from the iframe you attached to, so unrelated frames on your page can't spoof the player.
+
+## TypeScript
+
+Types ship with the package (`index.d.ts`) — no `@types` install needed. `attach()`, the `ConversationEmbed` class, event payloads, and every method are fully typed.
+
+## Documentation
+
+Full guide and the interaction-event reference: **[docs.orchestratexr.com/interaction-events](https://docs.orchestratexr.com/interaction-events)**. Issues and questions: [github.com/AccessVR/OrchestrateConversationEmbed/issues](https://github.com/AccessVR/OrchestrateConversationEmbed/issues).
 
 ## License
 
